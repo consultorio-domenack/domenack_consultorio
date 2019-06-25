@@ -1,0 +1,272 @@
+.tabla-horario{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+.dia-horario{
+    width: 15%;
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    padding-left: 20px;
+}
+.dia-horario:first-child{
+    border: none;
+}
+.form-reservar-cita{
+    margin-bottom: 10px;
+}
+.hora-tabla{
+    display: flex;
+    height: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.dia-semana-horario{
+    height: 22px;
+    margin-bottom: 10px;
+}
+.seleccion_semana{
+    display: flex;
+    margin: 20px 50px;
+    align-items: center;
+}
+.mostrar_semana{
+    display: flex;
+    width: 250px;
+    justify-content: center;
+}
+.seleccion_semana div{
+    margin-right: 25px;
+}
+
+.horario_semana{
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding-top: 20px;
+}
+
+
+/*Resumen de la Cita */
+.informacion-paciente-cita{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.informacion-paciente-cita div label{
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+.informacion-paciente-cita{
+    line-height: 40px;
+}
+.informacion-mensaje-cita{
+    background: #54A4FC;
+    padding: 25px 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.informacion-mensaje-cita div{
+    margin-bottom: 10px;
+}
+.informacion-campos-cita{
+    display: flex;
+    justify-content: flex-start;
+}
+.informacion-campos-cita div{
+    margin-right: 60px;
+}
+.informacion-control{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.informacion-control *{
+    margin-left: 20px;
+}
+.formulario_cita{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.formulario_servicio_cita{
+    flex-direction: row;
+    width: 48%;
+    line-height: 25px;
+    background-color: #54A4FC;
+    margin: 20px 0px;
+    border-radius: 3px;
+}
+.cabecera_servicio{
+    display: flex;
+    justify-content: space-between;
+    background: #006699;
+    padding: 10px;
+    border-radius: 3px;
+}
+.cabecera_servicio p{
+    width: 12vw;
+    text-align: center;
+    color: #cfe6ef;
+}
+.cabecera_servicio p:first-child{
+    width: 40vw;
+    text-align: initial;
+}
+.contenido_servicio{
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.input_datos{
+    font-size: 20px;
+    display: block;
+    width: 350px;
+    height: 100%;
+    padding: 5px 10px;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    border-radius: 0;
+}
+
+.button-consultorio{
+    background: #006699;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 2px;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
+.button-consultorio:hover{
+    background: #0474EE;
+}
+.button-desactivado{
+    background: gray;
+}
+.button-desactivado:hover{
+    background: gray;
+    cursor: default;
+}
+.button-consultorio-grande{
+    background: #006699;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
+.boton_servicio{
+    background: #0474EE;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
+
+
+/* Resumen de la cita */
+
+.informacion-paciente-cita{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.informacion-paciente-cita div label{
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+.informacion-paciente-cita{
+    line-height: 40px;
+}
+.informacion-mensaje-cita{
+    background: #54A4FC;
+    padding: 25px 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.informacion-mensaje-cita div{
+    margin-bottom: 10px;
+}
+.informacion-campos-cita{
+    display: flex;
+    justify-content: flex-start;
+}
+.informacion-campos-cita div{
+    margin-right: 60px;
+}
+.informacion-control{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.informacion-control *{
+    margin-left: 20px;
+}
+
+@media (max-width:1024px) {
+    .tabla-horario{
+        margin: 0px;
+        justify-content: flex-start;
+    }
+    .dia-horario{
+        padding: 0px 5px;
+        min-width: 16vw;
+    }
+    .dia-semana-horario{
+        font-size: 13px;
+    }
+    .hora-tabla{
+        font-size: 13px;
+    }
+    .formulario_servicio_cita{
+        width: 100%;
+        margin: 10px 15px 0px 15px;
+    }
+    .cabecera_servicio p{
+        width: 20vw;
+        text-align: center;
+    }
+    .cabecera_servicio p:first-child{
+        width: 30vw;
+        text-align: initial;
+    }
+}
+@media (max-width:850px) {
+    .dia-horario{
+        padding: 0px 5px;
+        min-width: 17.5vw;
+    }
+    .dia-horario:first-child{
+        width: 60px;
+        min-width: inherit;
+    }
+    .formulario_cita{
+        flex-direction: column;
+    }
+    .formulario_servicio_cita{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contenido_servicio{
+        display: none;
+    }
+    .button-consultorio{
+        padding: 7px 0px;
+        height: 50px;
+    }
+    .button-semana{
+        padding: 7px 10px;
+    }
+    .hora-tabla{
+        height: 50px;
+    }
+    .informacion-campos-cita{
+        flex-direction: column;
+    }
+}

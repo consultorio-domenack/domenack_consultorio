@@ -1,0 +1,140 @@
+.egt {
+    background-color: #555;
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+    border-radius: 0px 3px 3px 3px;
+}
+.cabecera-tabla {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+.cuerpo {
+    background-color: white;
+    border-left: 5px solid #2196F3;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: solid 1px #2196F3;
+    align-items: center;
+}
+.descripcion{
+    overflow:hidden;
+    max-width: 500px;
+}
+.descripcion p{
+    display: flex;
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    text-align: start;
+}
+.mantenimiento{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.mantenimiento form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.mantenimiento form >*{
+    width: 45%;
+    margin: 3px;
+}
+.container-table{
+    background: rgba(0, 0, 0, .1);
+    width: 70%;
+    min-width: 1000px;
+    min-height: 600px; 
+    margin: 5% auto;
+    border: solid 1px rgba(0, 0, 0, .2);;
+}
+.combobox-table{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.mant_servicio{
+    width: 100px;
+}
+.icon{
+    font-size: 26px;
+}
+.button-admin{
+    display: inline-block;
+    background: #555;
+    border: none;
+    border-radius: 3px 3px 0px 0px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    padding: 20px;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    text-decoration: none;
+}
+.button-servicio{
+    display: inline-block;
+    background: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 32px 0px;
+    width: 100%;
+    top:0;
+    bottom:0;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    text-decoration: none;
+}
+.button-consultorio:hover{
+    background: #0474EE;
+}
+
+.listaAtencionCitas{
+    display: flex;
+    flex-direction: row;
+    background: #555;
+    border-radius: 5px;
+    padding: 10px 2px;
+    margin: 5px 0px;
+    color: white;
+}
+.listaAtencionCitas span{
+    margin: 2px 5px;
+}
+
+
+@media (max-width:1024px) {
+    .descripcion{
+        overflow:hidden;
+    }
+    .descripcion p{
+        display: flex;
+        display: -webkit-box;
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        text-align: start;
+    }
+    .button-servicio{
+        padding: 18px 0px;
+    }
+}
+@media (max-width:850px) {
+
+}

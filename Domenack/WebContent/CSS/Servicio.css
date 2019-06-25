@@ -1,0 +1,55 @@
+.formulario_agregar_servicio{
+    background: #555;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10vw;
+}
+.formulario_agregar_servicio > *{
+    margin: 10px;
+}
+input[type="text"]{
+    width: 300px;
+    font-size: 20px;
+}
+textarea{
+    font-size: 20px;
+    resize: none;
+}
+input[type="text"]:nth-child(3){
+    width: 200px;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    background: #E2ECEE;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 200px;
+}
+.button-mandar{
+    display: inline-block;
+    background: #011826;
+    border: none;
+    border-radius: 3px 3px 0px 0px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    padding: 20px;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    text-decoration: none;
+}
+@media (max-width:850px) {
+    input[type="text"]{
+        width: inherit;
+    }
+    input[type="text"]:nth-child(3){
+        width: inherit;
+    }
+    .formulario_agregar_servicio{
+        margin: 20px 0px;
+    }
+}

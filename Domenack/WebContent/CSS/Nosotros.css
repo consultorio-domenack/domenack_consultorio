@@ -1,0 +1,98 @@
+.contenedor-informacion{
+    display: flex;
+    justify-content: space-between
+}
+
+/*Article*/
+.article-body{
+    width: 80%;
+    margin: auto;
+}
+.article-informacion{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.titulo-article{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin: 10px 0px 5px 0px;
+}
+.article-datos{
+    display: flex;
+    line-height:30px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.article-datos div{
+    margin: 10px 10px;
+    width: 45%;
+}
+.article-datos div p:first-child{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+/*Mision vision*/
+
+.mision_vision{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 50px 0px;
+    width: 100%;
+}
+.mision_vision div{
+    flex: 1 1;
+}
+.mision_vision div:first-child:not(.politica){
+    margin-right: 20px;
+}
+.titulo_mision{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Allerta', sans-serif;
+    color: #006699;
+}
+
+/*Doctor*/
+
+.article-doctor-informacion{
+    display: flex;
+    flex-direction: row;
+}
+.datos-doctor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    font-size: 20px;
+    justify-content: center;
+}
+.datos-doctor div{
+    margin-bottom: 10px;
+}
+.datos-doctor div:first-child{
+    font-size: 30px;
+    color: #54A4FC;
+}
+.datos-doctor div:first-child p{
+    color: #54A4FC;
+}
+
+
+@media (max-width:1024px) {
+    .container_document {
+        margin: auto;
+        width: inherit;
+    }
+}
+@media (max-width:850px) {
+    .article-datos div{
+        margin: 10px 10px;
+        width: 100%;
+    }
+}
